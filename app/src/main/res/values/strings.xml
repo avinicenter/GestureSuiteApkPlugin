@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GS APK Plugin</string>
+    <string name="intentAction">gesturesuite.apk.plugin.action</string>
+    <string name="intentActionExtra">uriExtra</string>
+    <string name="plugin_file_provider">apkplugin.file.provider</string>
+
+</resources>

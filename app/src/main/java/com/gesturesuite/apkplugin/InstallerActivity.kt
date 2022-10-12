@@ -48,7 +48,7 @@ class InstallerActivity: BaseActivity() {
     private fun startInstallFlow(context: Activity, intent: Intent){
         val extraKey = context.getString(R.string.intentActionExtra)
         intent.getStringExtra(extraKey)?.let { filePath ->
-            var uri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            val uri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 PluginFileProvider.getUriFromFile(context, filePath)
             } else {
                 Uri.parse("file://" + filePath)

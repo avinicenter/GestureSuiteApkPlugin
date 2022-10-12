@@ -16,7 +16,6 @@ class Receiver: BroadcastReceiver() {
                             Intent(context, InstallerActivity::class.java)
                                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                                 .putExtra(extraKey, intent.getStringExtra(extraKey))
-                                .putExtra("uri", intent.getStringExtra("uri"))
                         )
                     }
                     else{

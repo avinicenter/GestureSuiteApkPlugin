@@ -45,7 +45,7 @@
 
 
         <receiver
-            android:permission="apk.plugin.REQUEST_INSTALLS"
+            android:permission="com.gesture.suite.GS_PERMISSION"
             android:name=".Receiver"
             android:enabled="true"
             android:exported="true">
